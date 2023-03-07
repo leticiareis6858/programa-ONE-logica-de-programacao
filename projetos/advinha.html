@@ -1,0 +1,54 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var numeroPensado=Math.round(Math.random()*10)
+    var tentativas=1;
+    //var rangeNumerico = parseInt(prompt("Digite número limite da faixa numérica do sorteio!"));
+    //var numeroPensado = sorteia(rangeNumerico);
+    
+
+        while(tentativas <= 3) {
+
+         var chute = parseInt(prompt("Digite seu número de palpite!"));
+
+         if(chute == numeroPensado) {
+
+            mostra("<strong>Voce acertou!</strong>")
+            break;
+        } else {
+
+            mostra("<strong>Você errou</strong>, número correto a ser adivinhado foi: " + numeroPensado);
+
+        }
+      
+         tentativas++;  
+        };
+     //function sorteia(numeroPensado) {
+        //return Math.round(Math.random() * n); 
+       // Math.random() gera números aleatorios, com queremos numeros entre 0 e 10
+        // utiliza-se da multiplicação por 10 pegando duas casas decimais da função 
+       //como o usuário vai escolher até que número ele quer sortear, multiplicamos o math.random por n que é a função que permite o usuário escolher até que número ele quer sortear.
+        // Math.random();
+        // Math.round arredonda para um número inteiro.
+    //}  
+     // if(chute > numeroPensado) { 
+
+              //  mostra("Número do chute " + chute + " é maior que " + numeroPensado + " sorteado pelo programa");
+       // } else { 
+          //      mostra("Numero do chute " + chute + " é menor que " + numeroPensado + " sorteado pelo programa");
+          //  };
+  
+    </script>
+
+   
